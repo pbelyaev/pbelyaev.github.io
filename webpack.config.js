@@ -5,6 +5,7 @@ const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   devServer: {
     compress: true,
+    contentBase: path.resolve(__dirname, "public"),
   },
 
   entry: "./src/index.tsx",
@@ -13,6 +14,7 @@ module.exports = {
     path: path.resolve(__dirname, "public"),
     filename: "script.js",
     chunkFilename: "[name].[hash].js",
+    publicPath: "/",
   },
 
   resolve: {
