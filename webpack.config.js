@@ -24,22 +24,18 @@ module.exports = {
       { test: /\.tsx?$/i, loader: "ts-loader" },
       {
         test: /\.css$/,
-        use: [
-          MiniCSSExtractPlugin.loader,
-          "css-loader",
-          "postcss-loader",
-        ],
+        use: [MiniCSSExtractPlugin.loader, "css-loader", "postcss-loader"],
       },
     ],
   },
 
   plugins: [
-      new HtmlWebpackPlugin({
-        template: "src/index.html",
-      }),
-      new MiniCSSExtractPlugin({
-        filename: "styles.css",
-        chunkFilename: "styles.css",
-      }),
+    new HtmlWebpackPlugin({
+      template: "src/index.html",
+    }),
+    new MiniCSSExtractPlugin({
+      filename: "styles.css",
+      chunkFilename: "styles.css",
+    }),
   ],
 };

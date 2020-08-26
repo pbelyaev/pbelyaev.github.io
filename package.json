@@ -3,13 +3,21 @@
     "dev": "webpack-dev-server",
     "build": "webpack -p"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn pretty-quick"
+    }
+  },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
     "css-loader": "^4.2.2",
     "html-webpack-plugin": "^4.3.0",
+    "husky": "^4.2.5",
     "mini-css-extract-plugin": "^0.10.0",
     "postcss-cli": "^7.1.1",
     "postcss-loader": "^3.0.0",
+    "prettier": "^2.1.1",
+    "pretty-quick": "^3.0.0",
     "tailwindcss": "^1.7.5",
     "ts-loader": "^8.0.3",
     "typescript": "^4.0.2",
