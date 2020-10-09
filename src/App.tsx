@@ -1,5 +1,12 @@
 import * as React from 'react';
+import { Header } from './components/Header';
+import { Hero } from './components/Hero';
 
-const App: React.FC = () => <h1>It is alive!</h1>;
+const App: React.FC = () => (
+  <>
+    <Header />
+    <Hero />
+  </>
+);
 
 export { App };
