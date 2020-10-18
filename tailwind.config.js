@@ -10,7 +10,11 @@ module.exports = {
       body: ['Arial, Helvetica', 'sans-serif'],
     },
 
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        'global-container': '300px 1fr',
+      },
+    },
   },
 
   variants: {},

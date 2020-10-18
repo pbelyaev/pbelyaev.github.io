@@ -1,5 +1,12 @@
 import * as React from 'react';
 
-const App: React.FC = () => <>It works</>;
+import { GlobalContainer } from './components/GlobalContainer';
+import { Sidebar } from './components/Sidebar';
 
-export { App };
+export const App: React.FC = () => {
+  return (
+    <GlobalContainer>
+      <Sidebar />
+    </GlobalContainer>
+  );
+};
