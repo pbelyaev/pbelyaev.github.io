@@ -3,8 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  mode: 'production',
   entry: './src/index.tsx',
+  devServer: {
+    compress: true,
+    contentBase: path.resolve(__dirname, 'public'),
+  },
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'script.js',
