@@ -7,6 +7,7 @@ module.exports = {
   devServer: {
     compress: true,
     contentBase: path.resolve(__dirname, 'public'),
+    publicPath: '/',
   },
   output: {
     path: path.resolve(__dirname, 'public'),
@@ -19,7 +20,16 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.tsx?$/i, loader: 'ts-loader' },
+      {
+        test: /\.tsx?$/i,
+        loader: 'ts-loader',
+        options: {
+          configFile:
+            process.env.NODE_ENV === 'development'
+              ? 'tsconfig.dev.json'
+              : 'tsconfig.json',
+        },
+      },
       {
         test: /\.css$/,
         use: [MiniCSSExtractPlugin.loader, 'css-loader', 'postcss-loader'],
