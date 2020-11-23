@@ -12,15 +12,15 @@ jobs:
       - name: 📦 Downloading repo
         uses: actions/checkout@v2
 
-      - name: ⬆️ Installing dependencies
-        uses: borales/actions-yarn@v2.0.0
+      - uses: actions/setup-node@v2-beta
         with:
-          cmd: install
+          node-version: '14'
+        
+      - name: ⬆️ Pulling dependencies 
+        run: yarn install
 
       - name: 🔧 Building
-        uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: build
+        run: yarn build
 
       - name: 🚀 Shipping
         uses: JamesIves/github-pages-deploy-action@3.7.1
