@@ -1,0 +1,31 @@
+name: 🔧 Build and 🚀 Ship
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📦 Downloading repo
+        uses: actions/checkout@v2
+
+      - name: ⬆️ Installing dependencies
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install
+
+      - name: 🔧 Building
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: build
+
+      - name: 🚀 Shipping
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: github-page
+          FOLDER: public
+          CLEAN: true
