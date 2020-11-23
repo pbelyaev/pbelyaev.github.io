@@ -3,6 +3,7 @@
     "module": "esnext",
     "target": "es5",
     "jsx": "react-jsx",
+    "moduleResolution": "node",
     "strict": true,
     "allowJs": false,
     "sourceMap": false,
