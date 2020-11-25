@@ -38,7 +38,7 @@ export const Header: FunctionComponent = () => {
           </svg>
         </a>
         <a
-          href="https://github.com/pbelyaev"
+          href="https://linkedin.com/in/pavel-beliaev"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-gray-900 transition-colors"
           title="Linkedin profile"
