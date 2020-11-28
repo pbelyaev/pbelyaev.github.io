@@ -35,5 +35,8 @@
     "classnames": "^2.2.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
+  },
+  "peerDependencies": {
+    "node-forge": "^0.10.0"
   }
 }
