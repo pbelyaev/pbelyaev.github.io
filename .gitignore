@@ -3,4 +3,4 @@ node_modules
 cypress/videos
 cypress/screenshots
 build
-puiblic/styles.css
+public/styles.css
