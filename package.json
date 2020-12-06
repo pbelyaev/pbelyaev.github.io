@@ -5,7 +5,8 @@
     "build": "snowpack build",
     "build:tailwind": "postcss src/tailwind.css -o build/styles.css --env production",
     "build:tailwind:dev": "postcss src/tailwind.css -o public/styles.css --env development",
-    "test": "start-server-and-test start http://localhost:8080 cy:run",
+    "serve": "node server.js",
+    "test": "start-server-and-test serve 8080 cy:run",
     "cy:run": "cypress run",
     "cy:open": "cypress open"
   },
@@ -26,6 +27,7 @@
     "autoprefixer": "^10.0.4",
     "cssnano": "^4.1.10",
     "cypress": "^6.0.1",
+    "express": "^4.17.1",
     "husky": "^4.3.4",
     "postcss": "^8.1.14",
     "postcss-cli": "^8.3.0",
