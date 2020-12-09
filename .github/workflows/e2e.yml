@@ -6,12 +6,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-
-      - uses: actions/setup-node@v2-beta
+        
+      - name: Check `node_modules` cache
+        id: check-node-modules-cache
+        uses: actions/cache@v2
         with:
-          node-version: '14'
+          path: '**/node_modules'
+          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }} 
 
       - name: Install dependencies
+        if: steps.check-node-modules-cache.outputs.cache-hit != 'true'
         run: yarn install
 
       - name: Build the project
