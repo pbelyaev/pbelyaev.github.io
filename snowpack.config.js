@@ -19,7 +19,6 @@ module.exports = {
     '@snowpack/plugin-webpack',
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-babel',
-    '@snowpack/plugin-dotenv',
     '@snowpack/plugin-typescript',
   ],
 };
