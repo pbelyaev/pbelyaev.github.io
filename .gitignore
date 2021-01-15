@@ -1,5 +1,6 @@
 node_modules
-public
 .idea
 cypress/videos
 cypress/screenshots
+build
+public/styles.css

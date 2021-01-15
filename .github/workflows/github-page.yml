@@ -2,7 +2,7 @@ name: 🔧 Build and 🚀 Ship
 
 on:
   push:
-    branches: 
+    branches:
       - master
 
 jobs:
@@ -15,8 +15,8 @@ jobs:
       - uses: actions/setup-node@v2-beta
         with:
           node-version: '14'
-        
-      - name: ⬆️ Pulling dependencies 
+
+      - name: ⬆️ Pulling dependencies
         run: yarn install
 
       - name: 🔧 Building
@@ -27,5 +27,5 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: github-page
-          FOLDER: public
+          FOLDER: build
           CLEAN: true
