@@ -10,14 +10,13 @@ module.exports = {
     src: '/dist',
   },
 
+  packageOptions: {
+    knownEntrypoints: ['react/jsx-runtime'],
+  },
+
   plugins: [
-    [
-      '@snowpack/plugin-run-script',
-      {
-        cmd: 'yarn build:tailwind',
-        watch: 'yarn build:tailwind:dev',
-      },
-    ],
+    '@snowpack/plugin-postcss',
+    '@snowpack/plugin-webpack',
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-babel',
     '@snowpack/plugin-dotenv',
