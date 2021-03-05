@@ -7,10 +7,10 @@ export const BoringMessage = () => {
       className: "w-full md:w-2/3 text-center",
       children: [/*#__PURE__*/_jsx("h1", {
         className: "title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900",
-        children: "Interesting things are comming"
+        children: "Interesting things are coming"
       }), /*#__PURE__*/_jsx("p", {
         className: "mb-8 leading-relaxed",
-        children: "Something interesting should appear on this page but until it does this message and a few social links are here to intertain you."
+        children: "Something interesting should appear on this page but until it does this message and a few social links are here to entertain you."
       })]
     })
   });
