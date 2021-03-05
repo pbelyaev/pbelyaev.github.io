@@ -6,12 +6,12 @@ context('Basics', () => {
   });
 
   it('should display boring title', () => {
-    cy.contains('Interesting things are comming').should('exist');
+    cy.contains('Interesting things are coming').should('exist');
   });
 
   it('should display boring text', () => {
     cy.contains(
-      'Something interesting should appear on this page but until it does this message and a few social links are here to intertain you.'
+      'Something interesting should appear on this page but until it does this message and a few social links are here to entertain you.'
     ).should('exist');
   });
 });
