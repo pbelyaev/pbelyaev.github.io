@@ -1,5 +1,5 @@
-import { jsxs as _jsxs } from "../../_snowpack/pkg/react/jsx-runtime.js";
 import { jsx as _jsx } from "../../_snowpack/pkg/react/jsx-runtime.js";
+import { jsxs as _jsxs } from "../../_snowpack/pkg/react/jsx-runtime.js";
 export const Header = () => {
   return /*#__PURE__*/_jsxs("header", {
     className: "container mx-auto my-4 flex flex-wrap p-4 flex-col md:flex-row items-center",
