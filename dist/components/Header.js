@@ -16,7 +16,7 @@ export const Header = () => {
           children: "Pavel Beliaev"
         }), /*#__PURE__*/_jsx("span", {
           className: "text-xs text-gray-700",
-          children: "Software Engineer @ Delivery Hero"
+          children: "Software Engineer"
         })]
       })]
     }), /*#__PURE__*/_jsxs("nav", {
