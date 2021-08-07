@@ -13,9 +13,7 @@ export const Header: FunctionComponent = () => {
           <span className="text-xl text-gray-900 font-medium">
             Pavel Beliaev
           </span>
-          <span className="text-xs text-gray-700">
-            Software Engineer @ Delivery Hero
-          </span>
+          <span className="text-xs text-gray-700">Software Engineer</span>
         </span>
       </div>
       <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
