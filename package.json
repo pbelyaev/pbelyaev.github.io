@@ -16,12 +16,8 @@
     "serve": "node server.js",
     "test": "start-server-and-test serve 8080 cy:run",
     "cy:run": "cypress run",
-    "cy:open": "cypress open"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+    "cy:open": "cypress open",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
