@@ -1,5 +1,4 @@
-import { jsx as _jsx } from "../../_snowpack/pkg/react/jsx-runtime.js";
-import { jsxs as _jsxs } from "../../_snowpack/pkg/react/jsx-runtime.js";
+import { jsx as _jsx, jsxs as _jsxs } from "../../_snowpack/pkg/react/jsx-runtime.js";
 export const Footer = () => {
   return /*#__PURE__*/_jsx("footer", {
     className: "container px-4 py-8 mx-auto",

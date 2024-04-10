@@ -1,5 +1,4 @@
-import { jsx as _jsx } from "../../_snowpack/pkg/react/jsx-runtime.js";
-import { jsxs as _jsxs } from "../../_snowpack/pkg/react/jsx-runtime.js";
+import { jsx as _jsx, jsxs as _jsxs } from "../../_snowpack/pkg/react/jsx-runtime.js";
 export const BoringMessage = () => {
   return /*#__PURE__*/_jsx("section", {
     className: "container mx-auto flex flex-col px-5 py-24 justify-center items-center text-gray-700",
